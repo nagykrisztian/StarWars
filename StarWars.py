@@ -32,7 +32,17 @@ space.onkeypress(le, "Down")
 
 ship = turtle.Turtle()
 ship.shape("img/sprite.gif")
+ship.penup()
 
 while True:
+
+    if ship.xcor() > 400:
+        ship.setx(-390)
+    if ship.xcor() < -400:
+        ship.setx(390)
+    if ship.ycor() > 300:
+        ship.sety(-290)
+    if ship.ycor() < -300:
+        ship.sety(290)
 
     space.update()
