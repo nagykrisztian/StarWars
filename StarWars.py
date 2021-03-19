@@ -21,6 +21,7 @@ def le():
 
 def MeteorYcorSorsol():
     meteor.sety(randint(-250, 250))
+    meteor.setx(380)
 
 
 space = turtle.Screen()
@@ -60,5 +61,4 @@ while True:
     meteor.setx(meteor.xcor()-0.3)
     if meteor.xcor() < -400:
         MeteorYcorSorsol()
-        meteor.setx(380)
     space.update()
