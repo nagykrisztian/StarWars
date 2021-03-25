@@ -1,6 +1,7 @@
 import turtle
 import time
 from random import *
+import winsound
 
 
 def balra():
@@ -72,6 +73,9 @@ while True:
     for x in meteor_lista:
         x.setx(x.xcor()-0.3)
         if x.xcor() < -400:
+            MeteorYcorSorsol(x, meteor_lista.index(x))
+        if ship.distance(x.xcor(), x.ycor()) < 20:
+            winsound.PlaySound("sound/explosion-01.wav", winsound.SND_ASYNC)
             MeteorYcorSorsol(x, meteor_lista.index(x))
     
     space.update()
