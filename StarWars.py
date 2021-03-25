@@ -26,7 +26,7 @@ def MeteorYcorSorsol():
 
 space = turtle.Screen()
 space.setup(width=800,height=600)
-space.bgpic("img/space.png")
+space.bgpic("img/background.png")
 space.addshape("img/sprite.gif")
 space.addshape("img/meteor2.gif")
 
